@@ -261,3 +261,70 @@ class MSCKF:
 
     # Need an offset counter to align global cam_state indices in tracks with local array indices
     cam_state_offset = 0
+
+    # ── Zero-Velocity Update (ZUPT) ───────────────────────────────────────────
+
+    def zero_velocity_update(self):
+        """
+        Inject a pseudo-measurement that constrains velocity to zero.
+        Called when the platform is detected as stationary.
+
+        Measurement model:  z = H * x + noise,  where z = [0,0,0] (v = 0)
+        H selects the velocity sub-state (rows 3:6 of the error-state).
+        """
+        dim = self.P.shape[0]
+
+        # Measurement Jacobian: z = v  →  H picks velocity block
+        H = np.zeros((3, dim))
+        H[:, 3:6] = np.eye(3)   # velocity is error-state indices 3-5
+
+        # Measurement noise: tight – we are confident the drone is still.
+        # Units: (m/s)^2.  0.01^2 → 1 cm/s std-dev.
+        R_zupt = np.eye(3) * (0.01 ** 2)
+
+        # Innovation: measured velocity minus predicted velocity
+        r = np.zeros(3) - self.state.v   # we expect v = 0
+
+        # Standard EKF update
+        S = H @ self.P @ H.T + R_zupt
+        try:
+            K = scipy.linalg.solve(S, H @ self.P, assume_a='pos').T
+            delta_x = K @ r
+
+            self.apply_state_update(delta_x)
+
+            I_KH = np.eye(dim) - K @ H
+            self.P = I_KH @ self.P @ I_KH.T + K @ R_zupt @ K.T
+            self.P = 0.5 * (self.P + self.P.T)
+        except np.linalg.LinAlgError:
+            pass
+
+    @staticmethod
+    def is_stationary(imu_window, acc_thresh: float = 0.15, gyro_thresh: float = 0.03) -> bool:
+        """
+        Detect stationarity from a short window of raw IMU readings.
+
+        Parameters
+        ----------
+        imu_window  : list of (w_m, a_m) tuples – recent raw IMU measurements
+        acc_thresh  : m/s² – max std-dev of |a| - g  to be called stationary
+        gyro_thresh : rad/s – max std-dev of angular rate to be called stationary
+
+        Returns True when both acceleration *variance* and gyro *variance* are tiny.
+        """
+        if len(imu_window) < 10:
+            return False
+
+        g_mag = 9.81
+        acc_norms  = np.array([np.linalg.norm(a) for _, a in imu_window])
+        gyro_norms = np.array([np.linalg.norm(w) for w, _ in imu_window])
+
+        # Variance (not std) keeps units small and avoids sqrt
+        acc_var  = np.var(acc_norms)
+        gyro_var = np.var(gyro_norms)
+
+        acc_mean_err = abs(np.mean(acc_norms) - g_mag)  # should be close to g when still
+
+        return (acc_var     < acc_thresh ** 2 and
+                gyro_var    < gyro_thresh ** 2 and
+                acc_mean_err < 0.5)              # gravity sanity check

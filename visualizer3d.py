@@ -19,6 +19,7 @@ Controls (during and after estimation)
 """
 
 import threading
+import cv2
 import time
 import numpy as np
 
@@ -173,6 +174,62 @@ class Visualizer3D:
         except Exception as exc:
             print(f"[Visualizer3D] Refresh error: {exc}")
             self._alive = False
+
+    # ── camera feed window ─────────────────────────────────────────────────────
+
+    def update_camera(self, img, tracks, fps: float = 0.0, initializing: bool = False):
+        """
+        Show camera image with overlaid feature tracks in a separate OpenCV window.
+
+        Parameters
+        ----------
+        img          : np.ndarray  – BGR or grayscale frame from the dataset
+        tracks       : list        – list of FeatureTrack objects (or empty list)
+        fps          : float       – current FPS to display in corner
+        initializing : bool        – show 'Initializing…' overlay instead of feature count
+        """
+        if img is None:
+            return
+
+        # Ensure colour so we can draw coloured circles
+        if len(img.shape) == 2 or img.shape[2] == 1:
+            vis = cv2.cvtColor(img, cv2.COLOR_GRAY2BGR)
+        else:
+            vis = img.copy()
+
+        h, w = vis.shape[:2]
+
+        # ── draw feature points ───────────────────────────────────────────────
+        for track in tracks:
+            kp = getattr(track, 'keypoint', None)
+            if kp is None:
+                continue
+            x, y = int(kp.pt[0]), int(kp.pt[1])
+            age = getattr(track, 'cam_state_idx', 0) - getattr(track, 'first_frame_idx', 0)
+            # colour shifts green→yellow→red as track ages
+            r = min(255, age * 20)
+            g = max(0, 255 - age * 15)
+            color = (0, g, r)          # BGR
+            cv2.circle(vis, (x, y), 4, color, -1)
+            cv2.circle(vis, (x, y), 5, (255, 255, 255), 1)  # white ring
+
+        # ── HUD overlay ───────────────────────────────────────────────────────
+        overlay = vis.copy()
+        cv2.rectangle(overlay, (0, 0), (w, 40), (0, 0, 0), -1)
+        cv2.addWeighted(overlay, 0.55, vis, 0.45, 0, vis)
+
+        if initializing:
+            label = "Initializing VIO..."
+            cv2.putText(vis, label, (10, 26),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.65, (80, 200, 255), 2, cv2.LINE_AA)
+        else:
+            n_feat = len(tracks)
+            label = f"Features: {n_feat}   FPS: {fps:.1f}"
+            cv2.putText(vis, label, (10, 26),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.65, (100, 255, 100), 2, cv2.LINE_AA)
+
+        cv2.imshow("VIO Camera Feed", vis)
+        cv2.waitKey(1)   # non-blocking – 1 ms
 
     # ── public API ────────────────────────────────────────────────────────────
 

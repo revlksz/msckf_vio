@@ -37,6 +37,10 @@ def main():
     initializer = Initializer(config)
     imu_buffer = []
     initialized = False
+    imu_window = []          # rolling window for ZUPT detection (~0.2 s at 200 Hz)
+    IMU_WINDOW_SIZE = 40
+    stationary_count = 0     # consecutive stationary camera frames (debounce)
+    ZUPT_DEBOUNCE = 5        # require N consecutive still frames before ZUPT fires
     # Visualization-only alignment: maps VIO frame → GT frame at t=0
     viz_R_align = np.eye(3)
     viz_t_align = np.zeros(3)
@@ -50,9 +54,10 @@ def main():
                     imu_buffer.append((sensor_data.timestamp, sensor_data.data))
                 elif sensor_data.type == 'image':
                     img = sensor_data.data
-                    # viz.update_camera(img, [], fps=0, initializing=True)
+                    viz.update_camera(img, [], fps=0, initializing=True)
                     
                     success = initializer.add_frame(img, imu_buffer)
+                    imu_buffer_snapshot = list(imu_buffer)  # keep for b_a estimate
                     imu_buffer = [] # Clear buffer
                     
                     if success:
@@ -62,7 +67,16 @@ def main():
                         msckf.state.q = final_state['q'].copy()
                         msckf.state.v = final_state['v'].copy()
                         msckf.state.b_g = initializer.b_g.copy()
-                        msckf.state.b_a = np.zeros(3)
+                        # Estimate b_a from static period: mean(a) - g_body
+                        if len(imu_buffer_snapshot) > 10:
+                            acc_vecs = np.array([a for _, (_, a) in imu_buffer_snapshot])
+                            mean_a = np.mean(acc_vecs, axis=0)
+                            R0 = quaternion_to_rotation_matrix(final_state['q'])
+                            g_body = R0.T @ np.array([0, 0, 9.81])
+                            msckf.state.b_a = mean_a - g_body
+                            print(f"[Init] b_a estimate: {msckf.state.b_a}")
+                        else:
+                            msckf.state.b_a = np.zeros(3)
                         
                         last_imu_time = sensor_data.timestamp
                         initialized = True
@@ -91,6 +105,11 @@ def main():
                 if dt > 0:
                     msckf.imu_callback(sensor_data.data, dt)
                 last_imu_time = sensor_data.timestamp
+
+                # Maintain rolling IMU window for ZUPT
+                imu_window.append(sensor_data.data)
+                if len(imu_window) > IMU_WINDOW_SIZE:
+                    imu_window.pop(0)
                 
             elif sensor_data.type == 'image':
                 cam_state_idx += 1
@@ -110,6 +129,31 @@ def main():
                 # 4. Prune old camera states
                 msckf.prune_cam_states()
                 
+                # 5. Zero-Velocity Update (ZUPT)
+                # Görsel track sayısına bakmaksızın, IMU durduğumuzu söylüyorsa ZUPT'a geç.
+                is_still = MSCKF.is_stationary(imu_window,
+                                               acc_thresh=0.12,
+                                               gyro_thresh=0.008)
+                
+                if is_still:
+                    stationary_count += 1
+                else:
+                    stationary_count = 0
+
+                if stationary_count >= ZUPT_DEBOUNCE:
+                    msckf.zero_velocity_update()
+                    zupt_active = "[ZUPT] "
+                    
+                    # CRITICAL FIX: Dron duruyorsa görsel özelliklerin triangülasyonu 
+                    # sonsuz hatalara yol açar. Bu yüzden görsel güncellemeyi (update) iptal ediyoruz.
+                    mature_tracks = [] 
+                else:
+                    zupt_active = ""
+
+                # 3. MSCKF Update with mature tracks (Eğer ZUPT aktif edildiyse, mature_tracks boşaltıldığı için burası atlanır)
+                if len(mature_tracks) > 0:
+                    msckf.update(mature_tracks)
+                
                 # Visualization
                 frames_processed += 1
                 elapsed = time.time() - start_time
@@ -125,10 +169,10 @@ def main():
                     
                     viz.update_trajectory(p_viz, q_viz, gt_p_W=gt_p)
                     num_features = len(feature_tracker.active_tracks)
-                    print(f"Frame {frames_processed} | FPS: {fps:.1f} | Features: {num_features} | Pos: {p_viz} | GT: {gt_p}")
+                    print(f"{zupt_active}Frame {frames_processed} | FPS: {fps:.1f} | Features: {num_features} | Pos: {p_viz} | GT: {gt_p}")
                 
-                # if frames_processed % 2 == 0:
-                #     viz.update_camera(img, feature_tracker.active_tracks, fps=fps)
+                # Camera feed – every frame (non-blocking)
+                viz.update_camera(img, feature_tracker.active_tracks, fps=fps)
                 
     except KeyboardInterrupt:
         print("Interrupted by user.")
