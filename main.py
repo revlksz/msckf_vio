@@ -36,8 +36,8 @@ def main():
     
     initializer = Initializer(config)
     imu_buffer = []
-    initialized = False
-    imu_window = []          # rolling window for ZUPT detection (~0.2 s at 200 Hz)
+    initialized = False  
+    imu_window = []          
     IMU_WINDOW_SIZE = 40
     stationary_count = 0     # consecutive stationary camera frames (debounce)
     ZUPT_DEBOUNCE = 5        # require N consecutive still frames before ZUPT fires
@@ -112,30 +112,61 @@ def main():
                     imu_window.pop(0)
                 
             elif sensor_data.type == 'image':
-                cam_state_idx += 1
-                
-                # 1. Augment MSCKF state
-                msckf.augment_state()
-                
-                # 2. Track features
                 img = sensor_data.data
-                feature_tracker.track(img, cam_state_idx)
+                gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) if len(img.shape) == 3 else img
                 
-                # 3. MSCKF Update with mature tracks
-                mature_tracks = feature_tracker.get_mature_tracks()
-                if len(mature_tracks) > 0:
-                    msckf.update(mature_tracks)
+                # -------------------------------------------------------------
+                # ORB TABANLI PARALAKS (KEYFRAME) KONTROLÜ
+                # -------------------------------------------------------------
+                is_keyframe = True
+                MIN_PARALLAX_PIXELS = 3.0
+                
+                # Gelen karedeki ORB özelliklerini çıkar
+                kps, des = feature_tracker.orb.detectAndCompute(gray, None)
+                
+                # Eğer daha önceden kaydedilmiş bir özellik havuzu varsa karşılaştır
+                if feature_tracker.prev_des is not None and des is not None and len(des) > 0:
+                    # Mevcut kareyi, kabul edilen son ANAHTAR KARE (prev_des) ile eşleştir
+                    matches = feature_tracker.matcher.match(feature_tracker.prev_des, des)
                     
-                # 4. Prune old camera states
-                msckf.prune_cam_states()
+                    if len(matches) > 8:
+                        src_pts = np.float32([feature_tracker.prev_kps[m.queryIdx].pt for m in matches])
+                        dst_pts = np.float32([kps[m.trainIdx].pt for m in matches])
+                        
+                        # Eşleşen noktalar arasındaki ortalama piksel mesafesini (parallax) hesapla
+                        avg_parallax = np.mean(np.linalg.norm(src_pts - dst_pts, axis=1))
+                        
+                        # Dron duruyorsa veya çok yavaşsa, bu kareyi filtreye sokma (marginalize et)
+                        if avg_parallax < MIN_PARALLAX_PIXELS:
+                            is_keyframe = False
+                # -------------------------------------------------------------
                 
+                # Sadece yeterli hareket varsa sistemi güncelle
+                if is_keyframe:
+                    cam_state_idx += 1
+                    
+                    # 1. Augment MSCKF state (Yeni bir kamera pozisyonu ekle)
+                    msckf.augment_state()
+                    
+                    # 2. Track features (Mevcut ORB track algoritman olduğu gibi çalışır)
+                    feature_tracker.track(img, cam_state_idx)
+                    
+                    # 3. MSCKF Update with mature tracks
+                    mature_tracks = feature_tracker.get_mature_tracks()
+                    if len(mature_tracks) > 0:
+                        msckf.update(mature_tracks)
+                        
+                    # 4. Prune old camera states
+                    msckf.prune_cam_states()
+
+
+
                 # 5. Zero-Velocity Update (ZUPT)
-                # Görsel track sayısına bakmaksızın, IMU durduğumuzu söylüyorsa ZUPT'a geç.
-                is_still = MSCKF.is_stationary(imu_window,
-                                               acc_thresh=0.12,
-                                               gyro_thresh=0.008)
+                # Dronun tamamen durduğu anları IMU ile yakala (Bir önceki ZUPT mantığımız)
+                few_visual = (is_keyframe == False) or (len(feature_tracker.get_mature_tracks()) == 0)
+                is_still = MSCKF.is_stationary(imu_window, acc_thresh=0.12, gyro_thresh=0.008)
                 
-                if is_still:
+                if is_still and few_visual:
                     stationary_count += 1
                 else:
                     stationary_count = 0
@@ -143,35 +174,26 @@ def main():
                 if stationary_count >= ZUPT_DEBOUNCE:
                     msckf.zero_velocity_update()
                     zupt_active = "[ZUPT] "
-                    
-                    # CRITICAL FIX: Dron duruyorsa görsel özelliklerin triangülasyonu 
-                    # sonsuz hatalara yol açar. Bu yüzden görsel güncellemeyi (update) iptal ediyoruz.
-                    mature_tracks = [] 
                 else:
                     zupt_active = ""
-
-                # 3. MSCKF Update with mature tracks (Eğer ZUPT aktif edildiyse, mature_tracks boşaltıldığı için burası atlanır)
-                if len(mature_tracks) > 0:
-                    msckf.update(mature_tracks)
                 
-                # Visualization
+                # Visualization (Her karede görselleştirme akmaya devam eder)
                 frames_processed += 1
                 elapsed = time.time() - start_time
                 fps = frames_processed / elapsed if elapsed > 0 else 0
                 
                 if frames_processed % 30 == 0:
                     gt_p = loader.get_gt_pose(sensor_data.timestamp)
-                    
-                    # Apply visualization alignment (VIO state is untouched)
                     p_viz = viz_R_align @ msckf.state.p + viz_t_align
                     R_viz = viz_R_align @ quaternion_to_rotation_matrix(msckf.state.q)
                     q_viz = rotation_matrix_to_quaternion(R_viz)
+                    # p_viz = msckf.state.p
+                    # q_viz = msckf.state.q
                     
                     viz.update_trajectory(p_viz, q_viz, gt_p_W=gt_p)
                     num_features = len(feature_tracker.active_tracks)
                     print(f"{zupt_active}Frame {frames_processed} | FPS: {fps:.1f} | Features: {num_features} | Pos: {p_viz} | GT: {gt_p}")
                 
-                # Camera feed – every frame (non-blocking)
                 viz.update_camera(img, feature_tracker.active_tracks, fps=fps)
                 
     except KeyboardInterrupt:
