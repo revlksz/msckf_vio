@@ -20,7 +20,7 @@ def main():
     msckf = MSCKF(config)
     viz = Visualizer3D(live_update_every=5)
     
-    dataset_path = os.path.join(os.path.dirname(__file__), 'MH_02_easy')
+    dataset_path = os.path.join(os.path.dirname(__file__), 'MH_01_easy')
     if os.path.exists(dataset_path):
         print(f"Loading EuRoC dataset from: {dataset_path}")
         loader = EurocDataLoader(dataset_path)

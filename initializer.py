@@ -126,7 +126,7 @@ class Initializer:
             print(f"Gravity refinement failed. g norm = {np.linalg.norm(g_v)}")
             return False
         # Align to World Frame
-        g_w = np.array([0, 0, 9.81])
+        g_w = np.array([0, 0, -9.81])
         g_v_norm = g_v / np.linalg.norm(g_v)
         g_w_norm = g_w / np.linalg.norm(g_w)
         v = np.cross(g_v_norm, g_w_norm)
@@ -334,9 +334,9 @@ class Initializer:
             q_c_v = self.frames[i]['q_c']
             p_c_v = self.frames[i]['p_c']
             R_c_v = quaternion_to_rotation_matrix(q_c_v)
-            R_b_v = R_c_v @ R_IC.T
+            R_b_v = R_c_v.T @ R_IC.T
             self.frames[i]['q_b'] = rotation_matrix_to_quaternion(R_b_v)
-            self.frames[i]['p_b'] = p_c_v - R_b_v @ p_IC
+            self.frames[i]['p_b'] = R_c_v.T @ (p_IC - p_c_v)
         return True
         
     def _calibrate_gyro_bias(self):
@@ -375,12 +375,12 @@ class Initializer:
             p_b_k1 = self.frames[i+1]['p_b']
             row = i * 6
             A[row:row+3, i*3:i*3+3] = -R_b_k.T * dt
-            A[row:row+3, dim-4:dim-1] = 0.5 * R_b_k.T * dt**2
+            A[row:row+3, dim-4:dim-1] = -0.5 * R_b_k.T * dt**2
             A[row:row+3, dim-1] = R_b_k.T @ (p_b_k1 - p_b_k)
             b[row:row+3] = dp
             A[row+3:row+6, i*3:i*3+3] = -R_b_k.T
             A[row+3:row+6, (i+1)*3:(i+1)*3+3] = R_b_k.T
-            A[row+3:row+6, dim-4:dim-1] = R_b_k.T * dt
+            A[row+3:row+6, dim-4:dim-1] = -R_b_k.T * dt
             b[row+3:row+6] = dv
         X, residuals, rank, s_vals = np.linalg.lstsq(A, b, rcond=None)
         velocities = [X[i*3:i*3+3] for i in range(n)]
@@ -413,15 +413,15 @@ class Initializer:
                 p_b_k1 = self.frames[i+1]['p_b']
                 row = i * 6
                 A[row:row+3, i*3:i*3+3] = -R_b_k.T * dt
-                A[row:row+3, dim-3] = 0.5 * R_b_k.T @ b1 * dt**2
-                A[row:row+3, dim-2] = 0.5 * R_b_k.T @ b2 * dt**2
+                A[row:row+3, dim-3] = -0.5 * R_b_k.T @ b1 * dt**2
+                A[row:row+3, dim-2] = -0.5 * R_b_k.T @ b2 * dt**2
                 A[row:row+3, dim-1] = R_b_k.T @ (p_b_k1 - p_b_k)
-                b[row:row+3] = dp - 0.5 * R_b_k.T @ g_norm * G_MAG * dt**2
+                b[row:row+3] = dp + 0.5 * R_b_k.T @ g_norm * G_MAG * dt**2
                 A[row+3:row+6, i*3:i*3+3] = -R_b_k.T
                 A[row+3:row+6, (i+1)*3:(i+1)*3+3] = R_b_k.T
-                A[row+3:row+6, dim-3] = R_b_k.T @ b1 * dt
-                A[row+3:row+6, dim-2] = R_b_k.T @ b2 * dt
-                b[row+3:row+6] = dv - R_b_k.T @ g_norm * G_MAG * dt
+                A[row+3:row+6, dim-3] = -R_b_k.T @ b1 * dt
+                A[row+3:row+6, dim-2] = -R_b_k.T @ b2 * dt
+                b[row+3:row+6] = dv + R_b_k.T @ g_norm * G_MAG * dt
             X, _, _, _ = np.linalg.lstsq(A, b, rcond=None)
             w1 = X[dim-3]
             w2 = X[dim-2]
