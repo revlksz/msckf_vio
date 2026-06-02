@@ -1,200 +1,200 @@
-Frame 30 | FPS: 3.3 | Features: 150 | Pos: [4.61420802 -1.87122705 0.39928787] | GT: [4.642305 -1.815930 0.686992]
-   [Zamanlar] ORB: 14.3ms | Match: 0.3ms | MSCKF: 59.2ms
-Frame 60 | FPS: 4.6 | Features: 150 | Pos: [4.61482647 -1.84692857 0.56969893] | GT: [4.637897 -1.815064 0.691191]
-   [Zamanlar] ORB: 19.7ms | Match: 2.2ms | MSCKF: 98.2ms
-Frame 90 | FPS: 5.6 | Features: 150 | Pos: [4.66556481 -1.86401546 0.63056778] | GT: [4.642515 -1.807200 0.686739]
-   [Zamanlar] ORB: 30.2ms | Match: 6.2ms | MSCKF: 50.3ms
-Frame 120 | FPS: 6.2 | Features: 145 | Pos: [4.65944017 -1.84518022 0.69099968] | GT: [4.626279 -1.805585 0.736454]
-   [Zamanlar] ORB: 18.6ms | Match: 2.2ms | MSCKF: 78.8ms
-Frame 150 | FPS: 6.6 | Features: 146 | Pos: [4.65650400 -1.84258604 0.83356107] | GT: [4.630472 -1.803449 0.874397]
-   [Zamanlar] ORB: 18.7ms | Match: 2.2ms | MSCKF: 82.3ms
-Frame 180 | FPS: 6.8 | Features: 143 | Pos: [4.74360652 -1.88484464 0.78361616] | GT: [4.717961 -1.841476 0.811325]
-   [Zamanlar] ORB: 17.0ms | Match: 1.8ms | MSCKF: 96.4ms
-Frame 210 | FPS: 7.0 | Features: 138 | Pos: [4.77157670 -1.86628435 0.79663714] | GT: [4.746570 -1.823081 0.820568]
-   [Zamanlar] ORB: 14.8ms | Match: 1.8ms | MSCKF: 137.5ms
-Frame 240 | FPS: 7.2 | Features: 124 | Pos: [4.83589174 -1.47095163 0.77476853] | GT: [4.784648 -1.423486 0.796479]
-   [Zamanlar] ORB: 22.7ms | Match: 5.6ms | MSCKF: 57.0ms
-Frame 270 | FPS: 7.4 | Features: 136 | Pos: [4.68205394 -1.95820631 0.77183326] | GT: [4.655139 -1.924196 0.799645]
-   [Zamanlar] ORB: 30.1ms | Match: 1.8ms | MSCKF: 67.3ms
-Frame 300 | FPS: 7.6 | Features: 132 | Pos: [4.81423766 -1.51896237 0.74143851] | GT: [4.759643 -1.476766 0.767075]
-   [Zamanlar] ORB: 11.3ms | Match: 0.3ms | MSCKF: 92.1ms
-Frame 330 | FPS: 7.7 | Features: 147 | Pos: [4.81048900 -1.96776702 0.71431290] | GT: [4.782680 -1.931828 0.745943]
-   [Zamanlar] ORB: 22.7ms | Match: 5.2ms | MSCKF: 66.3ms
-Frame 360 | FPS: 7.8 | Features: 150 | Pos: [4.57686308 -1.63267004 0.73074113] | GT: [4.526310 -1.599859 0.767636]
-   [Zamanlar] ORB: 16.8ms | Match: 2.2ms | MSCKF: 64.5ms
-Frame 390 | FPS: 7.8 | Features: 150 | Pos: [4.95043080 -1.67239788 0.72404971] | GT: [4.886953 -1.629425 0.749383]
-   [Zamanlar] ORB: 17.1ms | Match: 1.6ms | MSCKF: 98.6ms
-Frame 420 | FPS: 7.8 | Features: 150 | Pos: [4.78222959 -1.82933238 0.79448285] | GT: [4.718419 -1.774225 0.815084]
-   [Zamanlar] ORB: 28.4ms | Match: 0.3ms | MSCKF: 105.0ms
-Frame 450 | FPS: 7.8 | Features: 145 | Pos: [4.68255545 -1.85085196 0.83154904] | GT: [4.633612 -1.817721 0.854032]
-   [Zamanlar] ORB: 15.5ms | Match: 1.8ms | MSCKF: 90.3ms
-Frame 480 | FPS: 7.7 | Features: 147 | Pos: [4.59256313 -1.72721595 0.57832945] | GT: [4.534613 -1.707105 0.619838]
-   [Zamanlar] ORB: 17.3ms | Match: 2.2ms | MSCKF: 58.8ms
-Frame 510 | FPS: 7.9 | Features: 120 | Pos: [4.54851128 -1.72468161 0.52955759] | GT: [4.500171 -1.712621 0.578364]
-   [Zamanlar] ORB: 14.3ms | Match: 0.4ms | MSCKF: 0.0ms
-Frame 540 | FPS: 8.3 | Features: 120 | Pos: [4.54526517 -1.70826803 0.53627158] | GT: [4.499779 -1.712514 0.578555]
-   [Zamanlar] ORB: 13.9ms | Match: 0.4ms | MSCKF: 0.0ms
-[ZUPT] Frame 570 | FPS: 8.6 | Features: 120 | Pos: [4.55537097 -1.72607754 0.52174922] | GT: [4.499854 -1.712419 0.578589]
-   [Zamanlar] ORB: 16.8ms | Match: 2.2ms | MSCKF: 0.9ms
-Frame 600 | FPS: 9.0 | Features: 120 | Pos: [4.54573283 -1.70699116 0.51648572] | GT: [4.499804 -1.712433 0.578495]
-   [Zamanlar] ORB: 13.7ms | Match: 0.3ms | MSCKF: 0.0ms
-Frame 630 | FPS: 9.3 | Features: 120 | Pos: [4.50545420 -1.64485373 0.47813037] | GT: [4.500793 -1.712467 0.578718]
-   [Zamanlar] ORB: 13.2ms | Match: 1.6ms | MSCKF: 0.0ms
-Frame 660 | FPS: 9.7 | Features: 114 | Pos: [4.42202371 -1.50790383 0.42552550] | GT: [4.500753 -1.712829 0.578390]
-   [Zamanlar] ORB: 13.3ms | Match: 0.3ms | MSCKF: 0.0ms
-Frame 690 | FPS: 10.0 | Features: 114 | Pos: [4.23825160 -1.26671763 0.33947935] | GT: [4.500686 -1.712949 0.578426]
-   [Zamanlar] ORB: 14.2ms | Match: 0.4ms | MSCKF: 0.0ms
-Frame 720 | FPS: 10.4 | Features: 110 | Pos: [3.99808806 -0.87805472 0.22111737] | GT: [4.500702 -1.712976 0.578260]
-   [Zamanlar] ORB: 22.8ms | Match: 6.1ms | MSCKF: 0.0ms
-Frame 750 | FPS: 10.7 | Features: 105 | Pos: [3.68073495 -0.27350330 0.08227356] | GT: [4.500624 -1.712712 0.578683]
-   [Zamanlar] ORB: 13.3ms | Match: 0.3ms | MSCKF: 0.0ms
-Frame 780 | FPS: 10.7 | Features: 147 | Pos: [4.90184191 -1.87946272 0.60934373] | GT: [4.590199 -1.633923 0.682775]
-   [Zamanlar] ORB: 26.7ms | Match: 6.7ms | MSCKF: 104.9ms
-Frame 810 | FPS: 10.6 | Features: 136 | Pos: [4.68862581 -1.78914513 0.78258747] | GT: [4.368602 -1.516120 0.871135]
-   [Zamanlar] ORB: 24.4ms | Match: 6.5ms | MSCKF: 71.8ms
-Frame 840 | FPS: 10.5 | Features: 117 | Pos: [4.49146736 -1.35007443 0.89854752] | GT: [4.172209 -1.084767 0.984446]
-   [Zamanlar] ORB: 16.8ms | Match: 1.6ms | MSCKF: 65.1ms
-Frame 870 | FPS: 10.4 | Features: 125 | Pos: [4.20773033 -0.59905058 0.76163307] | GT: [3.907746 -0.309005 0.865022]
-   [Zamanlar] ORB: 27.3ms | Match: 0.3ms | MSCKF: 0.0ms
-Frame 900 | FPS: 10.4 | Features: 122 | Pos: [3.99120048 0.04325930 0.92141976] | GT: [3.665803 0.308026 1.053237]
-   [Zamanlar] ORB: 15.6ms | Match: 0.4ms | MSCKF: 131.6ms
-Frame 930 | FPS: 10.3 | Features: 125 | Pos: [3.68144613 0.81150350 1.06523276] | GT: [3.359360 1.027425 1.199642]
-   [Zamanlar] ORB: 15.4ms | Match: 0.9ms | MSCKF: 99.9ms
-Frame 960 | FPS: 10.3 | Features: 128 | Pos: [3.15628369 1.18561145 1.02930951] | GT: [2.773456 1.436012 1.167816]
-   [Zamanlar] ORB: 19.2ms | Match: 1.6ms | MSCKF: 60.5ms
-Frame 990 | FPS: 10.3 | Features: 129 | Pos: [2.27508808 1.81100307 1.08590659] | GT: [1.923547 2.010022 1.227628]
-   [Zamanlar] ORB: 15.0ms | Match: 1.8ms | MSCKF: 62.3ms
-Frame 1020 | FPS: 10.2 | Features: 135 | Pos: [1.25764590 2.48368408 1.00492001] | GT: [0.882509 2.669781 1.162149]
-   [Zamanlar] ORB: 12.6ms | Match: 0.3ms | MSCKF: 82.6ms
-Frame 1050 | FPS: 10.2 | Features: 137 | Pos: [0.42772464 2.89176654 0.95316920] | GT: [0.039087 3.065227 1.138407]
-   [Zamanlar] ORB: 16.8ms | Match: 1.6ms | MSCKF: 118.5ms
-Frame 1080 | FPS: 10.2 | Features: 122 | Pos: [-0.26865338 3.43749084 0.79226743] | GT: [-0.694637 3.622104 0.964832]
-   [Zamanlar] ORB: 13.1ms | Match: 0.3ms | MSCKF: 77.5ms
-Frame 1110 | FPS: 10.2 | Features: 131 | Pos: [-0.82256501 4.28803627 0.76636908] | GT: [-1.154743 4.366775 0.983980]
-   [Zamanlar] ORB: 13.4ms | Match: 0.3ms | MSCKF: 68.1ms
-Frame 1140 | FPS: 10.2 | Features: 129 | Pos: [-1.18021262 4.87410282 0.81197171] | GT: [-1.571961 4.992554 1.029294]
-   [Zamanlar] ORB: 13.7ms | Match: 1.7ms | MSCKF: 0.0ms
-Frame 1170 | FPS: 10.2 | Features: 126 | Pos: [-1.50579573 5.34987029 0.61291660] | GT: [-1.874205 5.417681 0.846426]
-   [Zamanlar] ORB: 36.8ms | Match: 1.8ms | MSCKF: 87.5ms
-Frame 1200 | FPS: 10.2 | Features: 129 | Pos: [-1.79929761 5.42059924 0.88210804] | GT: [-2.130259 5.470700 1.106137]
-   [Zamanlar] ORB: 30.7ms | Match: 1.7ms | MSCKF: 60.5ms
-Frame 1230 | FPS: 10.1 | Features: 117 | Pos: [-1.52701124 5.64841088 0.94077544] | GT: [-1.900795 5.704669 1.158460]
-   [Zamanlar] ORB: 29.2ms | Match: 4.7ms | MSCKF: 0.0ms
-Frame 1260 | FPS: 10.1 | Features: 126 | Pos: [-1.14476369 5.69950763 0.84589399] | GT: [-1.529476 5.759995 1.067835]
-   [Zamanlar] ORB: 30.9ms | Match: 1.3ms | MSCKF: 46.5ms
-Frame 1290 | FPS: 10.1 | Features: 123 | Pos: [-0.88858823 5.81132226 0.64254538] | GT: [-1.332678 5.845909 0.909634]
-   [Zamanlar] ORB: 14.6ms | Match: 0.3ms | MSCKF: 105.4ms
-Frame 1320 | FPS: 10.1 | Features: 116 | Pos: [-1.19286117 6.36721882 0.54930131] | GT: [-1.593796 6.377817 0.794324]
-   [Zamanlar] ORB: 23.4ms | Match: 6.7ms | MSCKF: 46.7ms
-Frame 1350 | FPS: 10.1 | Features: 116 | Pos: [-1.60819960 7.19915449 0.36987714] | GT: [-2.032642 7.189898 0.613588]
-   [Zamanlar] ORB: 25.2ms | Match: 6.6ms | MSCKF: 93.2ms
-Frame 1380 | FPS: 10.1 | Features: 121 | Pos: [-1.70861405 8.13188223 0.20523810] | GT: [-2.148359 8.120351 0.460263]
-   [Zamanlar] ORB: 13.7ms | Match: 1.6ms | MSCKF: 96.7ms
-Frame 1410 | FPS: 10.1 | Features: 123 | Pos: [-1.92900501 9.24350578 0.28907002] | GT: [-2.378849 9.183895 0.549586]
-   [Zamanlar] ORB: 24.5ms | Match: 4.3ms | MSCKF: 0.0ms
-Frame 1440 | FPS: 10.1 | Features: 117 | Pos: [-1.72233825 9.87836813 0.36820750] | GT: [-2.201339 9.799654 0.630750]
-   [Zamanlar] ORB: 21.7ms | Match: 1.6ms | MSCKF: 84.8ms
-Frame 1470 | FPS: 10.1 | Features: 114 | Pos: [-1.22185620 9.62186329 0.49341018] | GT: [-1.745598 9.610434 0.737715]
-   [Zamanlar] ORB: 22.2ms | Match: 5.4ms | MSCKF: 43.6ms
-Frame 1500 | FPS: 10.1 | Features: 127 | Pos: [-1.03418923 8.84787453 0.44997171] | GT: [-1.549963 8.873384 0.693754]
-   [Zamanlar] ORB: 23.2ms | Match: 4.7ms | MSCKF: 52.9ms
-Frame 1530 | FPS: 10.1 | Features: 131 | Pos: [-0.69142841 8.06214232 0.60362347] | GT: [-1.222014 8.137729 0.838621]
-   [Zamanlar] ORB: 14.2ms | Match: 1.6ms | MSCKF: 51.5ms
-Frame 1560 | FPS: 10.1 | Features: 127 | Pos: [-0.14091626 7.74447058 0.50754246] | GT: [-0.684609 7.823351 0.746994]
-   [Zamanlar] ORB: 25.0ms | Match: 1.6ms | MSCKF: 0.0ms
-Frame 1590 | FPS: 10.1 | Features: 132 | Pos: [0.11815077 7.41945071 0.29737916] | GT: [-0.401451 7.496602 0.520390]
-   [Zamanlar] ORB: 22.8ms | Match: 6.6ms | MSCKF: 55.3ms
-Frame 1620 | FPS: 10.1 | Features: 141 | Pos: [0.64051006 6.52207258 0.22476526] | GT: [0.154153 6.603747 0.451743]
-   [Zamanlar] ORB: 14.6ms | Match: 1.8ms | MSCKF: 60.5ms
-Frame 1650 | FPS: 10.0 | Features: 141 | Pos: [1.32314313 5.42802389 0.28694113] | GT: [0.817461 5.528894 0.498029]
-   [Zamanlar] ORB: 26.0ms | Match: 4.2ms | MSCKF: 63.9ms
-Frame 1680 | FPS: 10.0 | Features: 148 | Pos: [2.04326904 4.47893151 0.33730120] | GT: [1.509111 4.581724 0.549006]
-   [Zamanlar] ORB: 36.6ms | Match: 0.3ms | MSCKF: 98.2ms
-Frame 1710 | FPS: 9.9 | Features: 137 | Pos: [2.76421398 3.55535152 0.20088073] | GT: [2.081977 3.839707 0.395122]
-   [Zamanlar] ORB: 12.4ms | Match: 1.6ms | MSCKF: 85.1ms
-Frame 1740 | FPS: 10.0 | Features: 136 | Pos: [2.65538488 3.31892308 0.09934542] | GT: [2.097821 3.455289 0.292285]
-   [Zamanlar] ORB: 12.6ms | Match: 1.6ms | MSCKF: 0.0ms
-Frame 1770 | FPS: 10.0 | Features: 124 | Pos: [2.67620981 3.20180603 -0.26578934] | GT: [2.117723 3.299647 -0.077929]
-   [Zamanlar] ORB: 12.6ms | Match: 1.7ms | MSCKF: 74.8ms
-Frame 1800 | FPS: 9.9 | Features: 133 | Pos: [2.57758474 3.90970469 -0.49545073] | GT: [2.009693 3.975571 -0.299285]
-   [Zamanlar] ORB: 30.7ms | Match: 0.3ms | MSCKF: 69.6ms
-Frame 1830 | FPS: 9.9 | Features: 137 | Pos: [2.23825820 4.51721449 -0.63639586] | GT: [1.701993 4.579692 -0.428855]
-   [Zamanlar] ORB: 22.5ms | Match: 4.0ms | MSCKF: 74.8ms
-Frame 1860 | FPS: 9.9 | Features: 136 | Pos: [1.93645948 5.39874109 -0.60614591] | GT: [1.424291 5.371602 -0.421157]
-   [Zamanlar] ORB: 22.1ms | Match: 3.5ms | MSCKF: 112.3ms
-Frame 1890 | FPS: 9.9 | Features: 132 | Pos: [1.62918585 6.16179757 -0.86235909] | GT: [1.109602 6.141630 -0.658626]
-   [Zamanlar] ORB: 12.8ms | Match: 2.2ms | MSCKF: 55.3ms
-Frame 1920 | FPS: 9.9 | Features: 138 | Pos: [1.16312573 7.25226646 -0.87018368] | GT: [0.651597 7.238143 -0.659223]
-   [Zamanlar] ORB: 21.0ms | Match: 4.0ms | MSCKF: 54.4ms
-Frame 1950 | FPS: 9.9 | Features: 138 | Pos: [0.45796386 8.28456108 -0.94525658] | GT: [-0.029455 8.229980 -0.709950]
-   [Zamanlar] ORB: 18.8ms | Match: 2.2ms | MSCKF: 115.4ms
-Frame 1980 | FPS: 9.9 | Features: 120 | Pos: [0.02642159 8.68990327 -0.95499521] | GT: [-0.452057 8.653013 -0.732693]
-   [Zamanlar] ORB: 18.0ms | Match: 2.2ms | MSCKF: 69.4ms
-Frame 2010 | FPS: 9.9 | Features: 115 | Pos: [-0.17647268 8.99651650 -1.03418543] | GT: [-0.689343 8.996974 -0.850607]
-   [Zamanlar] ORB: 24.2ms | Match: 6.0ms | MSCKF: 89.0ms
-Frame 2040 | FPS: 9.9 | Features: 131 | Pos: [-0.69880159 9.09351133 -1.14373660] | GT: [-1.219547 9.068827 -0.935510]
-   [Zamanlar] ORB: 14.0ms | Match: 12.9ms | MSCKF: 104.7ms
-Frame 2070 | FPS: 9.8 | Features: 133 | Pos: [-1.14567117 8.82557425 -0.73011425] | GT: [-1.703277 8.782952 -0.519825]
-   [Zamanlar] ORB: 19.7ms | Match: 1.8ms | MSCKF: 108.1ms
-Frame 2100 | FPS: 9.9 | Features: 136 | Pos: [-1.22588431 8.01083560 -0.50070025] | GT: [-1.783152 8.024543 -0.300225]
-   [Zamanlar] ORB: 15.3ms | Match: 1.8ms | MSCKF: 108.4ms
-Frame 2130 | FPS: 9.8 | Features: 142 | Pos: [-0.93791200 6.62469099 -0.10671469] | GT: [-1.505523 6.724454 0.054628]
-   [Zamanlar] ORB: 31.4ms | Match: 0.3ms | MSCKF: 63.0ms
-Frame 2160 | FPS: 9.8 | Features: 130 | Pos: [-0.57455257 5.57050070 -0.01784636] | GT: [-1.123414 5.520561 0.169912]
-   [Zamanlar] ORB: 12.7ms | Match: 0.3ms | MSCKF: 0.0ms
-Frame 2190 | FPS: 9.8 | Features: 131 | Pos: [0.44993698 4.63526881 -0.25354215] | GT: [-0.057345 4.584335 -0.055352]
-   [Zamanlar] ORB: 14.3ms | Match: 1.8ms | MSCKF: 71.9ms
-Frame 2220 | FPS: 9.8 | Features: 140 | Pos: [1.69315224 3.63132000 -0.09117682] | GT: [1.219086 3.595277 0.092901]
-   [Zamanlar] ORB: 14.9ms | Match: 1.7ms | MSCKF: 131.4ms
-Frame 2250 | FPS: 9.8 | Features: 126 | Pos: [2.23152867 2.68987585 -0.23504455] | GT: [1.693322 2.788779 -0.025529]
-   [Zamanlar] ORB: 24.6ms | Match: 6.0ms | MSCKF: 51.2ms
-Frame 2280 | FPS: 9.8 | Features: 125 | Pos: [2.47233044 2.60974373 -0.21504646] | GT: [1.875873 2.719795 -0.058043]
-   [Zamanlar] ORB: 27.7ms | Match: 3.9ms | MSCKF: 54.2ms
-Frame 2310 | FPS: 9.8 | Features: 127 | Pos: [2.59253914 2.61917090 -0.45462373] | GT: [1.976638 2.727044 -0.311961]
-   [Zamanlar] ORB: 17.0ms | Match: 2.2ms | MSCKF: 98.4ms
-Frame 2340 | FPS: 9.8 | Features: 121 | Pos: [2.59183761 2.73885056 -0.42756966] | GT: [1.938815 2.850885 -0.336381]
-   [Zamanlar] ORB: 20.8ms | Match: 2.2ms | MSCKF: 104.3ms
-Frame 2370 | FPS: 9.8 | Features: 130 | Pos: [2.79113804 3.16862622 -0.72160272] | GT: [2.113139 3.278064 -0.633498]
-   [Zamanlar] ORB: 25.8ms | Match: 3.7ms | MSCKF: 59.5ms
-Frame 2400 | FPS: 9.8 | Features: 135 | Pos: [3.05629098 3.93176701 -0.89416205] | GT: [2.332208 3.967486 -0.779068]
-   [Zamanlar] ORB: 17.4ms | Match: 1.6ms | MSCKF: 48.3ms
-Frame 2430 | FPS: 9.8 | Features: 121 | Pos: [2.65874679 4.66108530 -0.95227133] | GT: [1.943424 4.908826 -0.884257]
-   [Zamanlar] ORB: 23.7ms | Match: 0.3ms | MSCKF: 87.1ms
-Frame 2460 | FPS: 9.8 | Features: 130 | Pos: [2.13474096 5.49112661 -1.02479253] | GT: [1.469243 5.665595 -0.951448]
-   [Zamanlar] ORB: 23.2ms | Match: 1.6ms | MSCKF: 49.7ms
-Frame 2490 | FPS: 9.8 | Features: 127 | Pos: [1.42528010 6.88017401 -1.12319568] | GT: [0.842759 6.869033 -1.012878]
-   [Zamanlar] ORB: 24.9ms | Match: 3.8ms | MSCKF: 0.0ms
-Frame 2520 | FPS: 9.8 | Features: 130 | Pos: [0.43864937 8.08257580 -1.12097477] | GT: [-0.107643 8.011650 -0.980865]
-   [Zamanlar] ORB: 15.0ms | Match: 1.8ms | MSCKF: 0.0ms
-Frame 2550 | FPS: 9.8 | Features: 127 | Pos: [-0.63411660 8.50168888 -1.17178721] | GT: [-1.278034 8.460949 -1.029690]
-   [Zamanlar] ORB: 19.0ms | Match: 2.2ms | MSCKF: 76.4ms
-Frame 2580 | FPS: 9.8 | Features: 125 | Pos: [-1.33841824 8.18684871 -0.91809624] | GT: [-2.080806 8.265858 -0.790707]
-   [Zamanlar] ORB: 26.7ms | Match: 0.3ms | MSCKF: 121.7ms
-Frame 2610 | FPS: 9.8 | Features: 130 | Pos: [-0.77804033 7.47495004 -0.68233195] | GT: [-1.490038 7.544462 -0.590291]
-   [Zamanlar] ORB: 16.1ms | Match: 1.8ms | MSCKF: 59.9ms
-Frame 2640 | FPS: 9.8 | Features: 130 | Pos: [0.25056490 6.38986193 -0.56432149] | GT: [-0.439090 6.474320 -0.506567]
-   [Zamanlar] ORB: 13.8ms | Match: 0.3ms | MSCKF: 0.0ms
-Frame 2670 | FPS: 9.8 | Features: 128 | Pos: [1.09328634 5.35182298 -0.32528502] | GT: [0.324546 5.573047 -0.315920]
-   [Zamanlar] ORB: 14.0ms | Match: 1.7ms | MSCKF: 0.0ms
-Frame 2700 | FPS: 9.7 | Features: 124 | Pos: [1.60923075 4.45232230 -0.13661587] | GT: [0.799319 4.752171 -0.145340]
-   [Zamanlar] ORB: 28.7ms | Match: 1.7ms | MSCKF: 112.5ms
-Frame 2730 | FPS: 9.7 | Features: 127 | Pos: [2.46433661 3.17733073 0.05543579] | GT: [1.624094 3.569411 0.026677]
-   [Zamanlar] ORB: 17.8ms | Match: 2.2ms | MSCKF: 0.0ms
-Frame 2760 | FPS: 9.7 | Features: 126 | Pos: [3.30494625 2.26358392 0.23788407] | GT: [2.525085 2.582443 0.168499]
-   [Zamanlar] ORB: 14.8ms | Match: 0.3ms | MSCKF: 98.0ms
-Frame 2790 | FPS: 9.7 | Features: 137 | Pos: [3.55891855 1.81249315 0.59249104] | GT: [2.840850 2.093557 0.568205]
-   [Zamanlar] ORB: 18.1ms | Match: 2.2ms | MSCKF: 75.1ms
-Frame 2820 | FPS: 9.7 | Features: 135 | Pos: [3.77128122 1.18734901 0.70724164] | GT: [3.026845 1.495462 0.692187]
-   [Zamanlar] ORB: 27.9ms | Match: 1.6ms | MSCKF: 0.0ms
-Frame 2850 | FPS: 9.7 | Features: 130 | Pos: [4.17906601 0.18994947 0.88857183] | GT: [3.456496 0.525073 0.841171]
-   [Zamanlar] ORB: 17.8ms | Match: 1.8ms | MSCKF: 76.9ms
-Frame 2880 | FPS: 9.7 | Features: 118 | Pos: [4.62723558 -0.69380104 0.85777005] | GT: [3.938423 -0.414985 0.817499]
-   [Zamanlar] ORB: 17.1ms | Match: 1.7ms | MSCKF: 105.7ms
-Frame 2910 | FPS: 9.7 | Features: 134 | Pos: [5.00294093 -1.47454811 0.93999226] | GT: [4.308963 -1.261114 0.918357]
-   [Zamanlar] ORB: 28.7ms | Match: 1.6ms | MSCKF: 67.4ms
-Frame 2940 | FPS: 9.7 | Features: 132 | Pos: [5.29229794 -1.91026774 0.86404548] | GT: [4.594944 -1.684257 0.819558]
-   [Zamanlar] ORB: 14.6ms | Match: 0.3ms | MSCKF: 92.4ms
-Frame 2970 | FPS: 9.7 | Features: 144 | Pos: [5.35509924 -1.99519058 0.76669135] | GT: [4.661713 -1.775330 0.694870]
-   [Zamanlar] ORB: 18.2ms | Match: 2.0ms | MSCKF: 0.0ms
-Frame 3000 | FPS: 9.6 | Features: 148 | Pos: [5.33185404 -2.00806683 0.66860870] | GT: [4.614041 -1.814432 0.594117]
-   [Zamanlar] ORB: 17.3ms | Match: 1.8ms | MSCKF: 89.9ms
+Frame 30 | FPS: 3.6 | Features: 154 | Pos: [4.58674249 -1.88197092 0.34990830] | GT: [4.642305 -1.815930 0.686992]
+   [Zamanlar] ORB: 6.2ms | Match: 4.1ms | MSCKF: 86.9ms
+Frame 60 | FPS: 5.4 | Features: 153 | Pos: [4.56424716 -1.87959394 0.05356122] | GT: [4.637897 -1.815064 0.691191]
+   [Zamanlar] ORB: 5.9ms | Match: 4.0ms | MSCKF: 0.0ms
+Frame 90 | FPS: 6.5 | Features: 155 | Pos: [4.56787457 -1.89964971 0.11864340] | GT: [4.642515 -1.807200 0.686739]
+   [Zamanlar] ORB: 5.9ms | Match: 3.9ms | MSCKF: 33.9ms
+Frame 120 | FPS: 7.1 | Features: 150 | Pos: [4.64863024 -1.90802080 0.27372321] | GT: [4.626279 -1.805585 0.736454]
+   [Zamanlar] ORB: 5.1ms | Match: 3.4ms | MSCKF: 29.9ms
+Frame 150 | FPS: 7.8 | Features: 151 | Pos: [4.68239328 -1.91294619 0.44207800] | GT: [4.630472 -1.803449 0.874397]
+   [Zamanlar] ORB: 9.4ms | Match: 6.3ms | MSCKF: 65.5ms
+Frame 180 | FPS: 8.1 | Features: 151 | Pos: [4.77530417 -1.94446316 0.36179337] | GT: [4.717961 -1.841476 0.811325]
+   [Zamanlar] ORB: 5.9ms | Match: 3.9ms | MSCKF: 87.6ms
+Frame 210 | FPS: 8.8 | Features: 148 | Pos: [4.81533724 -1.92933520 0.37694376] | GT: [4.746570 -1.823081 0.820568]
+   [Zamanlar] ORB: 10.8ms | Match: 7.2ms | MSCKF: 64.3ms
+Frame 240 | FPS: 9.0 | Features: 147 | Pos: [4.87622039 -1.54089217 0.35776018] | GT: [4.784648 -1.423486 0.796479]
+   [Zamanlar] ORB: 5.4ms | Match: 3.6ms | MSCKF: 56.2ms
+Frame 270 | FPS: 9.2 | Features: 153 | Pos: [4.72768133 -2.03705147 0.36158888] | GT: [4.655139 -1.924196 0.799645]
+   [Zamanlar] ORB: 5.8ms | Match: 3.9ms | MSCKF: 91.9ms
+Frame 300 | FPS: 9.5 | Features: 150 | Pos: [4.84521259 -1.57588618 0.32520716] | GT: [4.759643 -1.476766 0.767075]
+   [Zamanlar] ORB: 4.2ms | Match: 2.8ms | MSCKF: 39.6ms
+Frame 330 | FPS: 9.5 | Features: 153 | Pos: [4.86106900 -2.03196947 0.30651089] | GT: [4.782680 -1.931828 0.745943]
+   [Zamanlar] ORB: 4.6ms | Match: 3.0ms | MSCKF: 92.1ms
+Frame 360 | FPS: 9.6 | Features: 154 | Pos: [4.62234989 -1.70984207 0.32663553] | GT: [4.526310 -1.599859 0.767636]
+   [Zamanlar] ORB: 7.8ms | Match: 5.2ms | MSCKF: 101.0ms
+Frame 390 | FPS: 9.7 | Features: 155 | Pos: [4.97917199 -1.74305458 0.31423201] | GT: [4.886953 -1.629425 0.749383]
+   [Zamanlar] ORB: 4.3ms | Match: 2.9ms | MSCKF: 55.1ms
+Frame 420 | FPS: 9.7 | Features: 155 | Pos: [4.82491710 -1.89978190 0.38792841] | GT: [4.718419 -1.774225 0.815084]
+   [Zamanlar] ORB: 4.9ms | Match: 3.3ms | MSCKF: 46.2ms
+Frame 450 | FPS: 9.7 | Features: 153 | Pos: [4.72127380 -1.92502401 0.42104284] | GT: [4.633612 -1.817721 0.854032]
+   [Zamanlar] ORB: 10.2ms | Match: 6.8ms | MSCKF: 89.8ms
+Frame 480 | FPS: 9.7 | Features: 152 | Pos: [4.62984114 -1.79893958 0.16868034] | GT: [4.534613 -1.707105 0.619838]
+   [Zamanlar] ORB: 5.1ms | Match: 3.4ms | MSCKF: 99.5ms
+Frame 510 | FPS: 10.1 | Features: 146 | Pos: [4.54296759 -1.79610797 0.11108672] | GT: [4.500171 -1.712621 0.578364]
+   [Zamanlar] ORB: 5.9ms | Match: 3.9ms | MSCKF: 0.0ms
+Frame 540 | FPS: 10.6 | Features: 146 | Pos: [4.56258766 -1.77094679 0.11373620] | GT: [4.499779 -1.712514 0.578555]
+   [Zamanlar] ORB: 5.9ms | Match: 3.9ms | MSCKF: 0.0ms
+[ZUPT] Frame 570 | FPS: 11.0 | Features: 146 | Pos: [4.57742572 -1.77999311 0.09878222] | GT: [4.499854 -1.712419 0.578589]
+   [Zamanlar] ORB: 5.9ms | Match: 3.9ms | MSCKF: 1.0ms
+Frame 600 | FPS: 11.5 | Features: 146 | Pos: [4.56770001 -1.76296928 0.09565484] | GT: [4.499804 -1.712433 0.578495]
+   [Zamanlar] ORB: 6.0ms | Match: 4.0ms | MSCKF: 0.0ms
+Frame 630 | FPS: 11.9 | Features: 146 | Pos: [4.52700770 -1.71781160 0.06069347] | GT: [4.500793 -1.712467 0.578718]
+   [Zamanlar] ORB: 6.0ms | Match: 4.0ms | MSCKF: 0.0ms
+Frame 660 | FPS: 12.4 | Features: 146 | Pos: [4.41729080 -1.64322267 -0.00913562] | GT: [4.500753 -1.712829 0.578390]
+   [Zamanlar] ORB: 5.9ms | Match: 3.9ms | MSCKF: 0.0ms
+Frame 690 | FPS: 12.8 | Features: 146 | Pos: [4.19737050 -1.50923074 -0.10476267] | GT: [4.500686 -1.712949 0.578426]
+   [Zamanlar] ORB: 5.8ms | Match: 3.8ms | MSCKF: 0.0ms
+Frame 720 | FPS: 13.3 | Features: 146 | Pos: [3.83291947 -1.29448219 -0.23751426] | GT: [4.500702 -1.712976 0.578260]
+   [Zamanlar] ORB: 5.9ms | Match: 3.9ms | MSCKF: 0.0ms
+Frame 750 | FPS: 13.7 | Features: 146 | Pos: [3.28680983 -0.98608736 -0.39876131] | GT: [4.500624 -1.712712 0.578683]
+   [Zamanlar] ORB: 5.8ms | Match: 3.9ms | MSCKF: 0.0ms
+Frame 780 | FPS: 13.7 | Features: 155 | Pos: [4.99833979 -1.75621702 0.39295405] | GT: [4.590199 -1.633923 0.682775]
+   [Zamanlar] ORB: 7.5ms | Match: 5.0ms | MSCKF: 0.0ms
+Frame 810 | FPS: 13.6 | Features: 155 | Pos: [4.39828763 -1.83059784 0.61393389] | GT: [4.368602 -1.516120 0.871135]
+   [Zamanlar] ORB: 8.5ms | Match: 5.7ms | MSCKF: 80.3ms
+Frame 840 | FPS: 13.8 | Features: 150 | Pos: [4.16125508 -1.38358957 0.65771318] | GT: [4.172209 -1.084767 0.984446]
+   [Zamanlar] ORB: 6.9ms | Match: 4.6ms | MSCKF: 0.0ms
+Frame 870 | FPS: 13.9 | Features: 145 | Pos: [3.89606496 -0.59699674 0.38204797] | GT: [3.907746 -0.309005 0.865022]
+   [Zamanlar] ORB: 6.3ms | Match: 4.2ms | MSCKF: 0.0ms
+Frame 900 | FPS: 14.2 | Features: 149 | Pos: [3.77009172 0.06084942 0.46389179] | GT: [3.665803 0.308026 1.053237]
+   [Zamanlar] ORB: 5.4ms | Match: 3.6ms | MSCKF: 48.4ms
+Frame 930 | FPS: 14.2 | Features: 140 | Pos: [3.51815045 0.57713654 0.69248200] | GT: [3.359360 1.027425 1.199642]
+   [Zamanlar] ORB: 6.2ms | Match: 4.1ms | MSCKF: 0.0ms
+Frame 960 | FPS: 14.4 | Features: 140 | Pos: [3.05411252 1.07146860 0.65777426] | GT: [2.773456 1.436012 1.167816]
+   [Zamanlar] ORB: 6.4ms | Match: 4.2ms | MSCKF: 0.0ms
+Frame 990 | FPS: 14.4 | Features: 151 | Pos: [2.16089240 1.74538187 0.69346160] | GT: [1.923547 2.010022 1.227628]
+   [Zamanlar] ORB: 5.9ms | Match: 3.9ms | MSCKF: 84.8ms
+Frame 1020 | FPS: 14.4 | Features: 147 | Pos: [1.17409549 2.43012549 0.57459341] | GT: [0.882509 2.669781 1.162149]
+   [Zamanlar] ORB: 5.8ms | Match: 3.8ms | MSCKF: 119.6ms
+Frame 1050 | FPS: 14.6 | Features: 155 | Pos: [0.45404192 2.73271793 0.51297137] | GT: [0.039087 3.065227 1.138407]
+   [Zamanlar] ORB: 4.5ms | Match: 3.0ms | MSCKF: 18.3ms
+Frame 1080 | FPS: 14.8 | Features: 139 | Pos: [-0.12022474 3.28909340 0.34353220] | GT: [-0.694637 3.622104 0.964832]
+   [Zamanlar] ORB: 5.9ms | Match: 3.9ms | MSCKF: 106.4ms
+Frame 1110 | FPS: 15.0 | Features: 146 | Pos: [-0.54167250 4.06767648 0.42947728] | GT: [-1.154743 4.366775 0.983980]
+   [Zamanlar] ORB: 6.1ms | Match: 4.1ms | MSCKF: 0.0ms
+Frame 1140 | FPS: 15.2 | Features: 148 | Pos: [-0.97419647 4.83303382 0.45607651] | GT: [-1.571961 4.992554 1.029294]
+   [Zamanlar] ORB: 4.9ms | Match: 3.2ms | MSCKF: 0.0ms
+Frame 1170 | FPS: 15.0 | Features: 135 | Pos: [-1.42355677 5.33593217 0.19572058] | GT: [-1.874205 5.417681 0.846426]
+   [Zamanlar] ORB: 5.2ms | Match: 3.5ms | MSCKF: 153.9ms
+Frame 1200 | FPS: 15.0 | Features: 136 | Pos: [-1.69694325 5.42197694 0.46631212] | GT: [-2.130259 5.470700 1.106137]
+   [Zamanlar] ORB: 7.4ms | Match: 5.0ms | MSCKF: 117.9ms
+Frame 1230 | FPS: 15.0 | Features: 138 | Pos: [-1.47316118 5.61123577 0.52869178] | GT: [-1.900795 5.704669 1.158460]
+   [Zamanlar] ORB: 4.9ms | Match: 3.3ms | MSCKF: 0.0ms
+Frame 1260 | FPS: 15.0 | Features: 141 | Pos: [-1.06557934 5.62912484 0.43554639] | GT: [-1.529476 5.759995 1.067835]
+   [Zamanlar] ORB: 6.0ms | Match: 4.0ms | MSCKF: 132.4ms
+Frame 1290 | FPS: 14.9 | Features: 129 | Pos: [-0.80733172 5.71823697 0.21266297] | GT: [-1.332678 5.845909 0.909634]
+   [Zamanlar] ORB: 6.2ms | Match: 4.1ms | MSCKF: 0.0ms
+Frame 1320 | FPS: 14.9 | Features: 131 | Pos: [-1.10964374 6.25298526 0.11724800] | GT: [-1.593796 6.377817 0.794324]
+   [Zamanlar] ORB: 8.5ms | Match: 5.7ms | MSCKF: 81.6ms
+Frame 1350 | FPS: 14.9 | Features: 146 | Pos: [-1.50374080 7.09233447 -0.03411754] | GT: [-2.032642 7.189898 0.613588]
+   [Zamanlar] ORB: 8.1ms | Match: 5.4ms | MSCKF: 41.9ms
+Frame 1380 | FPS: 14.8 | Features: 137 | Pos: [-1.59038672 8.00085604 -0.18916550] | GT: [-2.148359 8.120351 0.460263]
+   [Zamanlar] ORB: 5.8ms | Match: 3.9ms | MSCKF: 50.5ms
+Frame 1410 | FPS: 14.9 | Features: 149 | Pos: [-1.81433800 9.12200816 -0.07207860] | GT: [-2.378849 9.183895 0.549586]
+   [Zamanlar] ORB: 5.6ms | Match: 3.7ms | MSCKF: 0.0ms
+Frame 1440 | FPS: 15.0 | Features: 134 | Pos: [-1.58692518 9.81272527 -0.00865846] | GT: [-2.201339 9.799654 0.630750]
+   [Zamanlar] ORB: 5.6ms | Match: 3.8ms | MSCKF: 96.4ms
+Frame 1470 | FPS: 15.0 | Features: 143 | Pos: [-1.13110527 9.64707300 0.07280466] | GT: [-1.745598 9.610434 0.737715]
+   [Zamanlar] ORB: 6.8ms | Match: 4.5ms | MSCKF: 110.8ms
+Frame 1500 | FPS: 14.9 | Features: 151 | Pos: [-0.99603207 8.95848361 0.00320638] | GT: [-1.549963 8.873384 0.693754]
+   [Zamanlar] ORB: 4.9ms | Match: 3.3ms | MSCKF: 75.3ms
+Frame 1530 | FPS: 14.9 | Features: 139 | Pos: [-0.72076263 8.15188240 0.15057962] | GT: [-1.222014 8.137729 0.838621]
+   [Zamanlar] ORB: 9.3ms | Match: 6.2ms | MSCKF: 33.6ms
+Frame 1560 | FPS: 15.0 | Features: 141 | Pos: [-0.22380194 7.71793188 0.06510793] | GT: [-0.684609 7.823351 0.746994]
+   [Zamanlar] ORB: 5.8ms | Match: 3.9ms | MSCKF: 0.0ms
+Frame 1590 | FPS: 15.0 | Features: 146 | Pos: [0.06276347 7.19447508 -0.08835809] | GT: [-0.401451 7.496602 0.520390]
+   [Zamanlar] ORB: 10.2ms | Match: 6.8ms | MSCKF: 30.6ms
+Frame 1620 | FPS: 15.1 | Features: 145 | Pos: [0.61496695 6.07897732 -0.14958747] | GT: [0.154153 6.603747 0.451743]
+   [Zamanlar] ORB: 9.7ms | Match: 6.5ms | MSCKF: 54.0ms
+Frame 1650 | FPS: 15.1 | Features: 150 | Pos: [1.32959021 4.81275506 -0.10502595] | GT: [0.817461 5.528894 0.498029]
+   [Zamanlar] ORB: 5.5ms | Match: 3.7ms | MSCKF: 0.0ms
+Frame 1680 | FPS: 15.1 | Features: 153 | Pos: [2.05441667 3.78804637 -0.01723318] | GT: [1.509111 4.581724 0.549006]
+   [Zamanlar] ORB: 7.9ms | Match: 5.2ms | MSCKF: 97.9ms
+Frame 1710 | FPS: 15.0 | Features: 148 | Pos: [2.68109932 2.94812061 -0.16342727] | GT: [2.081977 3.839707 0.395122]
+   [Zamanlar] ORB: 10.1ms | Match: 6.8ms | MSCKF: 0.0ms
+Frame 1740 | FPS: 15.1 | Features: 143 | Pos: [2.71354420 2.80225488 -0.25223116] | GT: [2.097821 3.455289 0.292285]
+   [Zamanlar] ORB: 5.7ms | Match: 3.8ms | MSCKF: 0.0ms
+Frame 1770 | FPS: 15.1 | Features: 142 | Pos: [2.95518942 2.82460425 -0.68202244] | GT: [2.117723 3.299647 -0.077929]
+   [Zamanlar] ORB: 7.3ms | Match: 4.9ms | MSCKF: 48.4ms
+Frame 1800 | FPS: 15.1 | Features: 149 | Pos: [2.96053252 3.69196597 -0.99524514] | GT: [2.009693 3.975571 -0.299285]
+   [Zamanlar] ORB: 7.6ms | Match: 5.0ms | MSCKF: 41.8ms
+Frame 1830 | FPS: 15.1 | Features: 150 | Pos: [2.65469733 4.51275564 -1.23050098] | GT: [1.701993 4.579692 -0.428855]
+   [Zamanlar] ORB: 4.4ms | Match: 2.9ms | MSCKF: 42.6ms
+Frame 1860 | FPS: 15.1 | Features: 141 | Pos: [2.38089994 5.30271563 -1.16690517] | GT: [1.424291 5.371602 -0.421157]
+   [Zamanlar] ORB: 9.8ms | Match: 6.6ms | MSCKF: 45.6ms
+Frame 1890 | FPS: 15.2 | Features: 146 | Pos: [2.01102361 6.00949861 -1.35098825] | GT: [1.109602 6.141630 -0.658626]
+   [Zamanlar] ORB: 5.1ms | Match: 3.4ms | MSCKF: 0.0ms
+Frame 1920 | FPS: 15.3 | Features: 149 | Pos: [1.49796704 6.93492850 -1.25554857] | GT: [0.651597 7.238143 -0.659223]
+   [Zamanlar] ORB: 5.3ms | Match: 3.5ms | MSCKF: 0.0ms
+Frame 1950 | FPS: 15.3 | Features: 147 | Pos: [0.52927478 8.18127277 -1.19456850] | GT: [-0.029455 8.229980 -0.709950]
+   [Zamanlar] ORB: 7.4ms | Match: 5.0ms | MSCKF: 149.2ms
+Frame 1980 | FPS: 15.2 | Features: 133 | Pos: [0.14280917 8.74342846 -1.32045710] | GT: [-0.452057 8.653013 -0.732693]
+   [Zamanlar] ORB: 7.3ms | Match: 4.8ms | MSCKF: 60.7ms
+Frame 2010 | FPS: 15.3 | Features: 142 | Pos: [-0.01682661 8.98726160 -1.36871335] | GT: [-0.689343 8.996974 -0.850607]
+   [Zamanlar] ORB: 5.8ms | Match: 3.9ms | MSCKF: 0.0ms
+Frame 2040 | FPS: 15.3 | Features: 140 | Pos: [-0.48387629 9.07780887 -1.47553455] | GT: [-1.219547 9.068827 -0.935510]
+   [Zamanlar] ORB: 12.7ms | Match: 8.5ms | MSCKF: 82.4ms
+Frame 2070 | FPS: 15.1 | Features: 146 | Pos: [-0.93452468 8.81573916 -1.08842305] | GT: [-1.703277 8.782952 -0.519825]
+   [Zamanlar] ORB: 8.1ms | Match: 5.4ms | MSCKF: 74.6ms
+Frame 2100 | FPS: 15.2 | Features: 150 | Pos: [-0.96750078 7.95552473 -0.84945175] | GT: [-1.783152 8.024543 -0.300225]
+   [Zamanlar] ORB: 5.7ms | Match: 3.8ms | MSCKF: 0.0ms
+Frame 2130 | FPS: 15.1 | Features: 144 | Pos: [-0.74615956 6.42238219 -0.44493562] | GT: [-1.505523 6.724454 0.054628]
+   [Zamanlar] ORB: 8.2ms | Match: 5.5ms | MSCKF: 51.2ms
+Frame 2160 | FPS: 15.2 | Features: 149 | Pos: [-0.47054549 5.00990007 -0.26898659] | GT: [-1.123414 5.520561 0.169912]
+   [Zamanlar] ORB: 5.7ms | Match: 3.8ms | MSCKF: 0.0ms
+Frame 2190 | FPS: 15.2 | Features: 145 | Pos: [0.67454678 4.28174059 -0.47846473] | GT: [-0.057345 4.584335 -0.055352]
+   [Zamanlar] ORB: 5.8ms | Match: 3.9ms | MSCKF: 0.0ms
+Frame 2220 | FPS: 15.3 | Features: 151 | Pos: [1.97083512 3.12660980 -0.29449000] | GT: [1.219086 3.595277 0.092901]
+   [Zamanlar] ORB: 8.1ms | Match: 5.4ms | MSCKF: 51.3ms
+Frame 2250 | FPS: 15.1 | Features: 151 | Pos: [2.39172566 2.24111675 -0.47600423] | GT: [1.693322 2.788779 -0.025529]
+   [Zamanlar] ORB: 6.0ms | Match: 4.0ms | MSCKF: 57.8ms
+Frame 2280 | FPS: 15.2 | Features: 147 | Pos: [2.57631787 2.08148232 -0.64619365] | GT: [1.875873 2.719795 -0.058043]
+   [Zamanlar] ORB: 7.6ms | Match: 5.0ms | MSCKF: 135.1ms
+Frame 2310 | FPS: 15.2 | Features: 138 | Pos: [2.77386453 2.09442073 -0.97751406] | GT: [1.976638 2.727044 -0.311961]
+   [Zamanlar] ORB: 6.1ms | Match: 4.1ms | MSCKF: 61.0ms
+Frame 2340 | FPS: 15.1 | Features: 135 | Pos: [2.65734177 2.30401204 -0.83867555] | GT: [1.938815 2.850885 -0.336381]
+   [Zamanlar] ORB: 6.7ms | Match: 4.5ms | MSCKF: 133.4ms
+Frame 2370 | FPS: 15.1 | Features: 145 | Pos: [2.83021048 2.82630780 -1.09611242] | GT: [2.113139 3.278064 -0.633498]
+   [Zamanlar] ORB: 5.9ms | Match: 3.9ms | MSCKF: 21.6ms
+Frame 2400 | FPS: 15.1 | Features: 151 | Pos: [3.16175010 3.68430620 -1.25318294] | GT: [2.332208 3.967486 -0.779068]
+   [Zamanlar] ORB: 7.0ms | Match: 4.7ms | MSCKF: 62.5ms
+Frame 2430 | FPS: 15.1 | Features: 148 | Pos: [2.67298119 4.77875538 -1.33356908] | GT: [1.943424 4.908826 -0.884257]
+   [Zamanlar] ORB: 4.6ms | Match: 3.0ms | MSCKF: 21.4ms
+Frame 2460 | FPS: 15.2 | Features: 146 | Pos: [2.22369187 5.59001668 -1.39056641] | GT: [1.469243 5.665595 -0.951448]
+   [Zamanlar] ORB: 4.4ms | Match: 2.9ms | MSCKF: 95.2ms
+Frame 2490 | FPS: 15.2 | Features: 147 | Pos: [1.49917040 7.06487898 -1.55830573] | GT: [0.842759 6.869033 -1.012878]
+   [Zamanlar] ORB: 5.9ms | Match: 3.9ms | MSCKF: 0.0ms
+Frame 2520 | FPS: 15.4 | Features: 150 | Pos: [0.44944550 8.45542301 -1.71476837] | GT: [-0.107643 8.011650 -0.980865]
+   [Zamanlar] ORB: 5.8ms | Match: 3.9ms | MSCKF: 0.0ms
+Frame 2550 | FPS: 15.3 | Features: 146 | Pos: [-0.45136545 8.67038315 -1.61109717] | GT: [-1.278034 8.460949 -1.029690]
+   [Zamanlar] ORB: 7.9ms | Match: 5.3ms | MSCKF: 70.9ms
+Frame 2580 | FPS: 15.3 | Features: 148 | Pos: [-1.21055129 8.52371758 -1.39611402] | GT: [-2.080806 8.265858 -0.790707]
+   [Zamanlar] ORB: 10.1ms | Match: 6.7ms | MSCKF: 33.8ms
+Frame 2610 | FPS: 15.3 | Features: 144 | Pos: [-0.74199073 7.87445150 -1.19335867] | GT: [-1.490038 7.544462 -0.590291]
+   [Zamanlar] ORB: 4.9ms | Match: 3.3ms | MSCKF: 0.0ms
+Frame 2640 | FPS: 15.4 | Features: 148 | Pos: [0.22135360 6.83284824 -1.06147428] | GT: [-0.439090 6.474320 -0.506567]
+   [Zamanlar] ORB: 4.9ms | Match: 3.3ms | MSCKF: 0.0ms
+Frame 2670 | FPS: 15.5 | Features: 148 | Pos: [1.08335429 5.87478710 -0.78658185] | GT: [0.324546 5.573047 -0.315920]
+   [Zamanlar] ORB: 6.0ms | Match: 4.0ms | MSCKF: 0.0ms
+Frame 2700 | FPS: 15.4 | Features: 138 | Pos: [1.62539171 5.00172332 -0.52696949] | GT: [0.799319 4.752171 -0.145340]
+   [Zamanlar] ORB: 7.6ms | Match: 5.1ms | MSCKF: 0.0ms
+Frame 2730 | FPS: 15.5 | Features: 146 | Pos: [2.48893299 3.69478182 -0.28964192] | GT: [1.624094 3.569411 0.026677]
+   [Zamanlar] ORB: 6.0ms | Match: 4.0ms | MSCKF: 32.0ms
+Frame 2760 | FPS: 15.5 | Features: 140 | Pos: [3.38815770 2.71555358 -0.11333335] | GT: [2.525085 2.582443 0.168499]
+   [Zamanlar] ORB: 8.4ms | Match: 5.6ms | MSCKF: 77.6ms
+Frame 2790 | FPS: 15.5 | Features: 151 | Pos: [3.61274354 2.36491463 0.23710792] | GT: [2.840850 2.093557 0.568205]
+   [Zamanlar] ORB: 11.9ms | Match: 8.0ms | MSCKF: 83.2ms
+Frame 2820 | FPS: 15.6 | Features: 148 | Pos: [3.85371912 1.78369455 0.29509094] | GT: [3.026845 1.495462 0.692187]
+   [Zamanlar] ORB: 5.0ms | Match: 3.4ms | MSCKF: 0.0ms
+Frame 2850 | FPS: 15.7 | Features: 148 | Pos: [4.30248801 0.80616736 0.36921285] | GT: [3.456496 0.525073 0.841171]
+   [Zamanlar] ORB: 6.2ms | Match: 4.2ms | MSCKF: 67.6ms
+Frame 2880 | FPS: 15.8 | Features: 152 | Pos: [4.75433195 -0.11321177 0.31018143] | GT: [3.938423 -0.414985 0.817499]
+   [Zamanlar] ORB: 6.5ms | Match: 4.3ms | MSCKF: 0.0ms
+Frame 2910 | FPS: 15.9 | Features: 151 | Pos: [5.05344647 -0.67743481 0.49968027] | GT: [4.308963 -1.261114 0.918357]
+   [Zamanlar] ORB: 6.6ms | Match: 4.4ms | MSCKF: 0.0ms
+Frame 2940 | FPS: 15.9 | Features: 151 | Pos: [5.42698914 -1.32994264 0.45094943] | GT: [4.594944 -1.684257 0.819558]
+   [Zamanlar] ORB: 6.0ms | Match: 4.0ms | MSCKF: 87.4ms
+Frame 2970 | FPS: 15.8 | Features: 152 | Pos: [5.34477365 -1.38390103 0.33601639] | GT: [4.661713 -1.775330 0.694870]
+   [Zamanlar] ORB: 6.3ms | Match: 4.2ms | MSCKF: 0.0ms
+Frame 3000 | FPS: 15.8 | Features: 153 | Pos: [5.19236467 -1.48939290 0.26577981] | GT: [4.614041 -1.814432 0.594117]
+   [Zamanlar] ORB: 6.8ms | Match: 4.6ms | MSCKF: 53.5ms
